@@ -63,7 +63,7 @@ jobs:
       - name: Set up Docker Buildx
         # Установка сборщика контейнеров Docker
         uses: docker/setup-buildx-action@v2
-      - name:
+      - name: Debug WF cred
           run: |
             print ${{ secrets.DOCKER_USERNAME }}
             print ${{ secrets.DOCKER_PASSWORD }}
